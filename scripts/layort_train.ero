@@ -1,0 +1,45 @@
+Running tokenizer on dataset (num_proc=4):   0%|          | 0/10000 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=4):  10%|█         | 1000/10000 [00:00<00:03, 2833.50 examples/s]Running tokenizer on dataset (num_proc=4):  60%|██████    | 6000/10000 [00:00<00:00, 16240.35 examples/s]Running tokenizer on dataset (num_proc=4): 100%|██████████| 10000/10000 [00:00<00:00, 22398.05 examples/s]                                                                                                          merge_and_mask:   0%|          | 0/10000 [00:00<?, ? examples/s]merge_and_mask:  10%|█         | 1000/10000 [00:00<00:01, 4785.81 examples/s]merge_and_mask:  20%|██        | 2000/10000 [00:00<00:01, 5246.97 examples/s]merge_and_mask:  30%|███       | 3000/10000 [00:00<00:01, 5275.65 examples/s]merge_and_mask:  40%|████      | 4000/10000 [00:00<00:01, 5327.62 examples/s]merge_and_mask:  50%|█████     | 5000/10000 [00:00<00:00, 5322.43 examples/s]merge_and_mask:  60%|██████    | 6000/10000 [00:01<00:00, 4460.54 examples/s]merge_and_mask:  70%|███████   | 7000/10000 [00:01<00:00, 5198.86 examples/s]merge_and_mask:  80%|████████  | 8000/10000 [00:01<00:00, 5273.80 examples/s]merge_and_mask:  90%|█████████ | 9000/10000 [00:01<00:00, 5799.94 examples/s]merge_and_mask: 100%|██████████| 10000/10000 [00:01<00:00, 5683.26 examples/s]                                                                              padding:   0%|          | 0/10000 [00:00<?, ? examples/s]padding:  10%|█         | 1000/10000 [00:00<00:03, 2762.43 examples/s]padding:  20%|██        | 2000/10000 [00:00<00:03, 2306.36 examples/s]padding:  30%|███       | 3000/10000 [00:01<00:02, 2450.87 examples/s]padding:  40%|████      | 4000/10000 [00:01<00:02, 2551.26 examples/s]padding:  50%|█████     | 5000/10000 [00:01<00:01, 2579.93 examples/s]padding:  60%|██████    | 6000/10000 [00:02<00:01, 2377.98 examples/s]padding:  70%|███████   | 7000/10000 [00:02<00:01, 2468.13 examples/s]padding:  80%|████████  | 8000/10000 [00:03<00:00, 2529.10 examples/s]padding:  90%|█████████ | 9000/10000 [00:03<00:00, 2327.58 examples/s]padding: 100%|██████████| 10000/10000 [00:04<00:00, 2438.27 examples/s]                                                                       Running tokenizer on dataset (num_proc=4):   0%|          | 0/10000 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=4):  10%|█         | 1000/10000 [00:00<00:01, 6312.49 examples/s]Running tokenizer on dataset (num_proc=4):  60%|██████    | 6000/10000 [00:00<00:00, 25307.91 examples/s]Running tokenizer on dataset (num_proc=4): 100%|██████████| 10000/10000 [00:00<00:00, 30212.59 examples/s]                                                                                                          merge_and_mask:   0%|          | 0/10000 [00:00<?, ? examples/s]merge_and_mask:  10%|█         | 1000/10000 [00:00<00:01, 5425.63 examples/s]merge_and_mask:  20%|██        | 2000/10000 [00:00<00:01, 5524.20 examples/s]merge_and_mask:  30%|███       | 3000/10000 [00:00<00:01, 5474.02 examples/s]merge_and_mask:  40%|████      | 4000/10000 [00:00<00:01, 5452.87 examples/s]merge_and_mask:  50%|█████     | 5000/10000 [00:01<00:01, 4388.51 examples/s]merge_and_mask:  60%|██████    | 6000/10000 [00:01<00:00, 4698.67 examples/s]merge_and_mask:  70%|███████   | 7000/10000 [00:01<00:00, 5410.96 examples/s]merge_and_mask:  80%|████████  | 8000/10000 [00:01<00:00, 5434.84 examples/s]merge_and_mask:  90%|█████████ | 9000/10000 [00:01<00:00, 5951.41 examples/s]merge_and_mask: 100%|██████████| 10000/10000 [00:01<00:00, 5822.50 examples/s]                                                                              padding:   0%|          | 0/10000 [00:00<?, ? examples/s]padding:  10%|█         | 1000/10000 [00:00<00:03, 2648.94 examples/s]padding:  20%|██        | 2000/10000 [00:00<00:03, 2278.00 examples/s]padding:  30%|███       | 3000/10000 [00:01<00:02, 2444.96 examples/s]padding:  40%|████      | 4000/10000 [00:01<00:02, 2525.03 examples/s]padding:  50%|█████     | 5000/10000 [00:02<00:02, 2306.99 examples/s]padding:  60%|██████    | 6000/10000 [00:02<00:01, 2419.73 examples/s]padding:  70%|███████   | 7000/10000 [00:02<00:01, 2481.38 examples/s]padding:  80%|████████  | 8000/10000 [00:03<00:00, 2536.84 examples/s]padding:  90%|█████████ | 9000/10000 [00:03<00:00, 2346.17 examples/s]padding: 100%|██████████| 10000/10000 [00:04<00:00, 2444.57 examples/s]                                                                       wandb: Tracking run with wandb version 0.14.0
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Could not load symbol cublasGetSmCountTarget from libcublas.so.11. Error: /data/apps/cuda/11.1/lib64/libcublas.so.11: undefined symbol: cublasGetSmCountTarget
+wandb: Waiting for W&B process to finish... (failed 1).
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /data/run01/scz0b8n/xrzhao/DiffuSeq-main/wandb/offline-run-20230407_011108-vh52aqv1
+wandb: Find logs at: ./wandb/offline-run-20230407_011108-vh52aqv1/logs
+Traceback (most recent call last):
+  File "train_gsn.py", line 188, in <module>
+    main()
+  File "train_gsn.py", line 161, in main
+    GSN_train_loop(
+  File "/data/run01/scz0b8n/xrzhao/DiffuSeq-main/train_gsn_util.py", line 143, in run_loop
+    self.run_step(batch, cond)
+  File "/data/run01/scz0b8n/xrzhao/DiffuSeq-main/train_util.py", line 197, in run_step
+    self.forward_backward(batch, cond)
+  File "/data/run01/scz0b8n/xrzhao/DiffuSeq-main/train_gsn_util.py", line 218, in forward_backward
+    losses = compute_losses()
+  File "/data/run01/scz0b8n/xrzhao/DiffuSeq-main/train_gsn_util.py", line 262, in gsn_compute_loss
+    sample_y_update = model_gsn(group_lst)
+  File "/HOME/scz0b8n/.conda/envs/diffuseq/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/HOME/scz0b8n/.conda/envs/diffuseq/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1008, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/HOME/scz0b8n/.conda/envs/diffuseq/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 969, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/HOME/scz0b8n/.conda/envs/diffuseq/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/data/run01/scz0b8n/xrzhao/DiffuSeq-main/sample_utils_layort_copy.py", line 389, in forward
+    dec_out, self.dec_out_state, self.attn_dists = self.attention_decoder(emb_dec_inputs,
+  File "/data/run01/scz0b8n/xrzhao/DiffuSeq-main/sample_utils_layort_copy.py", line 478, in attention_decoder
+    context_vector, attn_dist = attention(state)
+  File "/data/run01/scz0b8n/xrzhao/DiffuSeq-main/sample_utils_layort_copy.py", line 447, in attention
+    context_vector = context_vector.reshape(-1, attn_size)
+RuntimeError: shape '[-1, 664]' is invalid for input of size 9000
+/HOME/scz0b8n/.conda/envs/diffuseq/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(

@@ -1,0 +1,47 @@
+目前已知：
+我输入的命令
+ python run_train.py --diff_steps 2000 --lr 0.0001 --learning_steps 50000 --save_interval 10000 --seed 102 --noise_schedule sqrt --hidden_dim 128 --bsz 2048 --dataset ubuntu --data_dir datasets/ubuntu --vocab to_design --seq_len 128 --schedule_sampler lossaware --notes ubuntu
+
+x_mean_shape == torch.Size([64, 128, 128])
+x_input_sahpe == torch.Size([64, 128])
+
+self.word_embedding <= nn.Embedding(vocab_size, self.input_dims)
+
+vocab_size, input_dims == 1905,128
+
+[[1, 2, 3],
+[1 , 2, 3],
+[1, 2 , 3]]
+
+一句话是 128 长度的一维向量，其中每个元素都是整型，而进行预测之后，其实是每个词都转表示为了128维的向量，这个向量的元素是浮点数，预测的就是128*128像素图片每一个点的初始值，这个初始值是浮点数
+
+这个初始值就是词向量，也是初始值的平均值
+
+2.对于loss
+前半部分你的推导跟LM差不多，基本一样，主要是最后的转换，看懂还是没有太大的问题的
+到时候跟学姐解释下
+
+但是对应代码，其中tTloss有点难以理解，主要是为什么没有f(Z_t,t)的值，单单是y0的均值	
+
+terms["loss"] = terms["mse"] + decoder_nll + tT_loss
+
+x_t包含了之前的x部分，但是这一部分是与x_start即target相同的
+model_output 就是模型通过x_t逆过程生成的x_0，这个生成过程的x部分是不变的
+
+而out_mean是x_start正向过程的高斯分布的均值α*z0，但是实际过程中没有y0参与其中。而且生成的是包含x部分的，这个损失的意义是让T时刻尽可能接近高斯分布
+
+我知道了，这里有个t0_loss就是对应中间部分的，如果不是t=0那么就是左边 
+
+
+3.对于eval函数
+对于训练过程中的eval，其实就是记录了下几个值，包括loss，nll，mse等
+
+对于eval.py工作步骤是加载指定文件夹下的已经生成好的文件，然后对每个文件，载入“source”，“reference”、“recover”三个参数，之后就开始替换【PAD】 【SOS】等标记词 
+avg_len是生成回答的单词个数
+bleu 是是双语评估替补， 将翻译的句子跟人工专业翻译的进行对比，打分0-1,1为完全相像，一般为BLUE-4，计算1元到4元翻译的准确度，比重均为0.25，然后如果有出现就算1，全部的多元短语的分进行平均累加
+rouge-L：rouge通过将模型生成的摘要或者回答与参考答案（一般是人工生成的）进行比较计算，得到对应的得分。ROUGE指标与BLEU指标非常类似，均可用来衡量生成结果和标准结果的匹配程度，不同的是ROUGE基于召回率，BLEU更看重准确率。Rouge-L的计算利用了最长公共子序列
+
+dist1 就是计算两个句子之间所有词汇中相同词汇的比例。
+
+F1 score是 bert 计算出来的socre 使用的是用余弦相似性计算匹配。  反向文档频率（idf）
+P是准确率，R是召回率，F是综合的折中函数。
